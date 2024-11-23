@@ -30,3 +30,14 @@ ORDER BY customer_id;
 1. Order of Clauses: The WHERE clause always comes after the FROM clause and before GROUP BY.
 2. When using aggregation functions, you can include both non-aggregated columns (like customer_id) and aggregated columns (like SUM(amount)) in your SELECT statement,
 as long as the non-aggregated columns are included in the GROUP BY clause.
+
+
+```sql
+select customer_id,staff_id,sum(amount),count(*) from payment
+group by staff_id,customer_id
+order by customer_id
+```
+
+Tracking Payment Metrics: Analyzing total payments made by each customer and handled by each staff member.
+Performance Review: Understanding which staff members handle the most transactions for specific customers.
+Customer Insights: Gaining insights into individual customer payment patterns.
