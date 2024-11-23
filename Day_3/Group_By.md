@@ -31,7 +31,7 @@ ORDER BY customer_id;
 2. When using aggregation functions, you can include both non-aggregated columns (like customer_id) and aggregated columns (like SUM(amount)) in your SELECT statement,
 as long as the non-aggregated columns are included in the GROUP BY clause.
 
-
+---
 ```sql
 select customer_id,staff_id,sum(amount),count(*) from payment
 group by staff_id,customer_id
