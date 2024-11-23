@@ -38,6 +38,6 @@ group by staff_id,customer_id
 order by customer_id
 ```
 
-Tracking Payment Metrics: Analyzing total payments made by each customer and handled by each staff member.
-Performance Review: Understanding which staff members handle the most transactions for specific customers.
-Customer Insights: Gaining insights into individual customer payment patterns.
+1. Tracking Payment Metrics: Analyzing total payments made by each customer and handled by each staff member.
+2. Performance Review: Understanding which staff members handle the most transactions for specific customers.
+3. Customer Insights: Gaining insights into individual customer payment patterns.
